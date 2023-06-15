@@ -478,7 +478,14 @@ div>div>h1{
         text-align: center;
         justify-content: center;
     }
-    .contact{
-        width: fit-content;
+    .contact>div{
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    .contact>div>div{
+        margin: auto;
+        text-align: center;
+        display: block;
     }
 }
