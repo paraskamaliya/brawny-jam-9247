@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./registerform.css">
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <a href="./index.html">
+                <img src="https://i.ibb.co/ns0nFX8/TECH.png" alt="">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="./index.html">HOME</a>
+            <a href="./admission.html">ADMISSIONS</a>
+            <a href="./teacher.html">TEACHERS</a>
+            <a href="./about.html" class="active">ABOUT</a>
+            <a href="./news.html">NEWS</a>
+            <a href="./contact.html">CONTACT</a>
+        </div>
+    </div>
+    <div class="small">
+        <a href="./index.html" class="active">HOME</a>
+        <a href="./admission.html">ADMISSIONS</a>
+        <a href="./teacher.html">TEACHERS</a>
+        <a href="./about.html">ABOUT</a>
+        <a href="./news.html">NEWS</a>
+        <a href="./contact.html">CONTACT</a>
+    </div>
+    <div id="form">
+        <h2>
+            Please Fill Out Below Form Carefully.
+        </h2>
+        <h3>Student's Details</h3>
+        <form action="" id="details">
+            <label for="">Enter Your Name: </label><input type="text" id="name" placeholder="Student's Name" require="">
+
+            <label for="">Enter Your Email ID: </label><input type="email" id="email" placeholder="Student's Email ID" required>
+
+            <label for="">Enter Your Birth Date: </label><input type="date" id="birthdate" required>
+
+            <label for="">Enter Your Aadhar Number: </label><input type="text" placeholder="Student's Aadhar Number" required id="aadharnum" maxlength="16">
+
+            <label for="">Enter Your Mobile Number: </label><input type="number" placeholder="Student's Mobile Number" required id="mobilenum" maxlength="10">
+
+            <label for="">Enter Your Address</label><input type="text" placeholder="Address" required id="address">
+        </form>
+        <h3>Parent's Details</h3>
+        <form action="" id="parent-details">
+            <label for="">Enter Your Parent's Name/Guadian's Name: </label><input type="text" id="pname" placeholder="Parent's/Guadian's Name" required>
+
+            <label for="">Enter Your Parent's/Guardian's Mobile Number</label><input type="number" id="pmobilenum" placeholder="Parent's/Guardian's Mobile Number" required maxlength="10">
+
+            <label for="">Enter Parent's/Guardian's Email ID</label><input type="email" id="pemail" placeholder="Parent's/Guardian's Email ID" required>
+
+            <label for="">Enter Parent's/Guardian's Aadhar Number</label><input type="text" id="paadharnum" placeholder="Parent's/Guardian's Aadhar Number" required maxlength="16"> 
+
+            <label for="">Enter Parent's/Guardian's Address</label><input type="text" id="paddress" placeholder="Parent's/Guardian's Address" required>
+
+        </form>
+        <h3>Educational Details</h3>
+        <form action="" id="edu-details">
+            <label for="">Enter Your 10th Percentage: </label><input type="number" id="tenth" placeholder="10th Percentage" required maxlength="2">
+
+            <label for="">Select Your 12th Stream: </label><select name="" required id="twelths">
+                <option value="">Choose Your 12th Stream</option>
+                <option value="Commerce">Commerce</option>
+                <option value="Science">Science</option>
+                <option value="Arts">Arts</option>
+            </select>
+
+            <label for="">Enter Your 12th Percentage: </label><input type="text" id="twelthp" placeholder="12th Percentage" required maxlength="2">
+
+            <label for="">Select Your Course: </label><select name="" id="course">
+                <option value="">Choose Your Course</option>
+                <option value="Computer Programming">Computer Programming</option>
+                <option value="Electrical Engineering">Electrical Engineering</option>
+                <option value="Plumbing and HVAC">Plumbing and HVAC</option>
+                <option value="Graphic Design">Graphic Design</option>
+                <option value="Automotive Technology">Automotive Technology</option>
+                <option value="Medical Assisting">Medical Assisting</option>
+            </select>
+        </form>
+        <button id="sub">Submit</button>
+    </div>
+
+    <div id="display">
+        
+    </div>
+
+    <div class="contact">
+        <div>
+            <div>
+                <img src="https://i.ibb.co/ns0nFX8/TECH.png" alt="">
+                <h1>Get in touch</h1>
+                <h2>915, Valley, D Street, USA</h2>
+                <h3>www.techschool@gmail.com</h3>
+                <h3>+8687 552 4188</h3>
+            </div>
+            <div id="option1">
+                <a href="./about.html">About</a>
+                <a href="./about.html">About US</a>
+                <a href="./news.html">Blog</a>
+                <a href="./admission.html">Education</a>
+                <a href="./news.html">News</a>
+            </div>
+            <div id="option2">
+                <a href="./contact.html">Contact</a>
+                <a href="./about.html">About</a>
+                <a href="./news.html">News</a>
+                <a href="./admission.html">Admission</a>
+                <a href="./teacher.html">Teachers</a>
+            </div>
+            <div>
+                <div>
+                    <h1>Subscribe</h1>
+                </div>
+                <div>
+                    <input id="email" type="email" placeholder="Enter Email Address" required="">
+                    <button id="email_btn">Submit</button>
+                </div>
+                <div>
+                    <img src="https://cdn.pixabay.com/photo/2020/06/30/14/37/facebook-5356593_1280.png" alt="">
+                </div>
+                <div>
+                    <img src="https://blog.kakaocdn.net/dn/cd2MQ5/btqx0q65v5Y/mKwQKWKh0HNtslQkgsktE0/img.jpg" alt="">
+                    <img src="https://cdn.visa.com/v2/assets/images/logos/visa/blue/logo.png" alt="">
+                    <img src="https://www.mastercard.co.in/content/dam/public/mastercardcom/in/en/logos/mc-logo-52.svg" alt="">
+                    <img src="https://img.icons8.com/?size=512&id=61469&format=png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let btn=document.querySelector("#sub")
+    btn.addEventListener("click",function(){
+        let name=document.getElementById("name").value
+        let email=document.getElementById("email").value
+        let birthdate=document.getElementById("birthdate").value
+        let aadhar=document.getElementById("aadharnum").value
+        let mobile=document.getElementById("mobilenum").value
+        let address=document.getElementById("address").value
+        let pname=document.getElementById("pname").value
+        let pmobile=document.getElementById("pmobilenum").value
+        let pemail=document.getElementById("pemail").value
+        let paadhar=document.getElementById("paadharnum").value
+        let paddress=document.getElementById("paddress").value
+        let tenth=document.getElementById("tenth").value
+        let twelths=document.getElementById("twelths").value
+        let twelvep=document.getElementById("twelthp").value
+        let course=document.getElementById("course").value
+        if (name=="" || email=="" || birthdate=="" || aadhar=="" || mobile=="" || address==""||pname==""||pmobile==""||pemail==""||paadhar==""||paddress==""||tenth==""||twelths==""||twelvep==""||course==""){
+            alert ("Please Fill The All The Information")
+        }
+        else{
+            alert("Your Information is Saved, We Will Contact You for Further Progress")
+        }
+    })
+</script>
