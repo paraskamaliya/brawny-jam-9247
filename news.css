@@ -135,6 +135,15 @@ div>div>h1{
     width: 80%;
     border-radius: 15px;
 }
+.small{
+    text-align: center;
+}
+.small>a{
+    display: block;
+    padding: 0.5%;
+    text-decoration: none;
+    color: black;
+}
 
 @media screen and (min-width:1000px){
     .small{

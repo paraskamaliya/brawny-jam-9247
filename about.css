@@ -118,23 +118,12 @@ body{
     border-radius: 15px;
 }
 #course>div>div>p{
-    padding: 1%;
+    padding-left:2%;
+    padding-right: 2%;
 }
 #course>div>div:hover{
     transform: scale(1.1);
     border: 1px solid black;
-}
-#btn{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 2%;
-}
-#btn>a>button{
-    background-color: #71BDD5;
-    padding: 1%;
-    border: none;
-    border-radius: 15px;
-    font-size: 17px;
 }
 .contact{
     background-color: #71BDD5;
@@ -208,6 +197,74 @@ div>div>h1{
 .contact>div>div:nth-child(4)>div:nth-child(2){
     width: fit-content;
 }
+#eligible{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#eligible>h2{
+    border-bottom: 2px solid black;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 2%;
+}
+#eligible>table{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: auto;
+    font-size: 19px;
+}
+thead>tr{
+    background-color: #5dc5e5;
+}
+tbody>tr{
+    background-color: #c4dfe7;
+}
+#admission{
+    text-align: center;
+    margin: auto;
+    width:100%;
+    background-color: #71BDD5;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    margin-bottom: 3%;
+}
+#admission>#admiss{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    gap: 5%;
+    grid-template-columns: repeat(4,1fr);
+}
+#admiss>div>i{
+    border: 1px solid black;
+    padding: 3%;
+    width: 10%;
+    height: 20%;
+    border-radius: 50%;
+    background-color: #71BDD5;
+}
+#admiss>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5%;
+}
+#admiss>div>p{
+    font-weight: 400;
+    font-size: 20px;
+}
+#admission>a>button{
+    background-color: #d9eef5;
+    margin-top: 3%;
+    padding: 1%;
+    border: none;
+    border-radius: 15px;
+    font-size: 17px;
+}
+
 
 @media screen and (min-width:1000px){
     .small{
@@ -233,5 +290,12 @@ div>div>h1{
         margin: auto;
         text-align: center;
         display: block;
+    }
+    #admission>#admiss{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        gap: 5%;
+        grid-template-columns: repeat(2,1fr);
     }
 }
