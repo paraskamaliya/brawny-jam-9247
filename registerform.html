@@ -139,6 +139,13 @@
 </html>
 <script>
     let btn=document.querySelector("#sub")
+    let LSdata=JSON.parse(localStorage.getItem("details")) || [];
+    // if(data==null){
+    //     list=[];
+    // }
+    // else{
+    //     data=JSON.parse(list);
+    // }
     btn.addEventListener("click",function(){
         let name=document.getElementById("name").value
         let email=document.getElementById("email").value
@@ -159,7 +166,27 @@
             alert ("Please Fill The All The Information")
         }
         else{
-            alert("Your Information is Saved, We Will Contact You for Further Progress")
+            alert("Your Information is Saved, We Will Send you email if you are elible for course");
+            let obj={
+                name:name,
+                email:email,
+                birthdate: birthdate,
+                aadhar: aadhar,
+                mobile: mobile,
+                address: address,
+                parentname:pname,
+                parentmobile:pmobile,
+                parentemail:pemail,
+                parentaadhar:paadhar,
+                parentaddress:paddress,
+                tenth:tenth,
+                twelthstream:twelths,
+                twelvepercent:twelvep,
+                course:course
+            }
+            LSdata.push(obj);
+            localStorage.setItem("details",JSON.stringify(LSdata))
+            location.reload();
         }
     })
 </script>
