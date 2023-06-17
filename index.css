@@ -470,12 +470,17 @@ div>div>h1{
     text-decoration: none;
     color: black;
 }
-@media screen and (min-width:1000px){
+@media screen and (min-width:700px){
     .small{
         display: none;
     }
 }
-@media screen and (max-width:1000px){
+@media screen and (max-width:700px) and (min-width:0px){
+    body{
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
     .menu{
         display: none;
     }
@@ -524,6 +529,7 @@ div>div>h1{
     .education>div>div>img{
         width: 100%;
         border-radius: 15px;
+        position: relative;
     }
     #text{
         color: black;
@@ -537,5 +543,209 @@ div>div>h1{
         font-weight: 500;
         border-radius: 15px;
         border: none;
+    }
+    .cards{
+        display: grid;
+    }
+    .career{
+        background-color: #E9F4F8;
+        margin-top: 7%;
+        padding-top: 1%;
+        width: 100%;
+    }
+    .career>h1{
+        text-align: center;
+    }
+    .career>.ccard{
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        gap: 15px;
+        margin: auto;
+    }
+    .career>.ccard>div{
+        width: 60%;
+        border: none;
+        padding: 2%;
+        justify-self: center;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    }
+    .career>.ccard>div>button{
+        padding: 2%;
+        margin-left: 70%;
+        border-radius: 12px;
+        border: none;
+        font-weight: 600;
+        background-color: #71BDD5;
+    }
+    .career>.ccard>div>h2{
+        font-weight: 600;
+        margin-bottom: auto;
+    }
+    .career>.ccard>div>p{
+        margin-top: 2%;
+        font-size: 13px;
+    }
+    .career>#card2{
+        width: 100%;
+        padding-top: 7%;
+        margin: auto;
+        display: grid;
+        gap: 30px;
+        justify-content: center;
+    }
+    #card2>div:nth-child(1){
+        width: 60%;
+        margin: auto;
+    }
+    #card2>div:nth-child(1)>img{
+        width: 100%;
+        border-radius: 15px;
+    }
+    #card2>div:nth-child(2){
+        width: 60%;
+        margin: auto;
+    }
+    #card2>div:nth-child(2) h1{
+        font-size: 27px;
+        font-weight: 700;
+        margin-bottom: auto;
+    }
+    #card2>div:nth-child(2) p{
+        margin-top: 2%;
+        font-size: 13px;
+        margin-bottom: 3%;
+    }
+    
+    .career>#card3{
+        width: 70%;
+        padding-top: 7%;
+        margin: auto;
+        display: grid;
+        gap: 30px;
+        justify-content: center;
+    }
+    #card3>div:nth-child(1){
+        width: 60%;
+        margin: auto;
+    }
+    #card3>div:nth-child(1) h1{
+        font-size: 27px;
+        font-weight: 700;
+        margin-bottom: auto;
+    }
+    #card3>div:nth-child(1) p{
+        margin-top: 2%;
+        font-size: 13px;
+        margin-bottom: 3%;
+    }
+    #card3>div:nth-child(2){
+        width: 60%;
+        margin: auto;
+    }
+    #card3>div:nth-child(2)>img{
+        width: 100%;
+        border-radius: 15px;
+        margin: auto;
+    }
+    
+    .career>#card4{
+        width: 70%;
+        padding-top: 7%;
+        margin: auto;
+        display: grid;
+        justify-content: center;
+        padding-bottom: 5%;
+    }
+    #card4>div:nth-child(1){
+        width: 60%;
+        margin: auto;
+        background-color: white;
+        padding-top: 2%;
+        border-radius: 15px 0px 0px 15px;
+    }
+    #card4>div:nth-child(2){
+        width: 60%;
+        margin: auto;
+        background-color: white;
+        border-radius: 0px 15px 15px 0px;
+        justify-content: center;
+    }
+    #card4>div:nth-child(1)>h1:nth-child(1){
+        margin-bottom: auto;
+    }
+    #card4>div:nth-child(1)>h1:nth-child(2){
+        font-weight: 500;
+        margin-top: 3%;
+        margin-bottom: auto;
+    }
+    #card4>div:nth-child(1)>p:nth-child(3){
+        font-size: 13px;
+        margin-top: 2%;
+    }
+    #card4>div:nth-child(1)>p:nth-child(4){
+        font-size: 13px;
+        margin-top: auto;
+    }
+    #card4>div:nth-child(2)>img{
+        width: 70%;
+        border-radius: 15px;
+        margin: 10%;
+        margin-left: 18%;
+    }
+    .feed_sec{
+        width: 100%;
+        margin: auto;
+    }
+    .feed_sec>h1{
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .feed_sec>#feed{
+        display: grid;
+        width: 80%;
+        margin: auto;
+        gap: 15px;
+        justify-content: center;
+        margin-top: 3%;
+        padding-bottom: 7%;
+    }
+    .feed_sec>#feed>div{
+        width: 80%;
+        margin: auto;
+    }
+    #feed>div{
+        border: 1px solid #A7D8E6;
+        padding: 2%;
+        border-radius: 15px;
+        background-color: #E9F2F6;
+    }
+    #feed>div>div{
+        display: flex;
+        width: 50%;
+        align-items: center;
+        gap: 10%;
+    }
+    .feed_sec>#feed>div>div:nth-child(1){
+        width: 60%;
+    }
+    .feed_sec>#feed>div>div:nth-child(2){
+        width: 100%;
+    }
+    .feed_sec>#feed>div>div>div>img{
+        width: 100%;
+        border-radius: 50%;
+    }
+    #feed>div>p{
+        font-size: 15px;
+    }
+    .contact>div>div>h3:nth-child(4){
+        width: 10%;
+        font-size: 15px;
     }
 }
