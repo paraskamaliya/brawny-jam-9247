@@ -1,0 +1,140 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+#navbar{
+    width: 100%;
+    display: flex;
+    padding-top: 2%;
+    background-color: #71BDD5;
+}
+#navbar>div:nth-child(1){
+    width: 20%;
+    margin: auto;
+    justify-content: center;
+}
+#navbar>div:nth-child(2){
+    width: 30%;
+    margin: auto;
+    align-items: center;
+}
+#navbar>div>a>img{
+    width: 30%;
+    border-radius: 50%;
+}
+#navbar>div:nth-child(2)>a{
+    text-decoration: none;
+    color: black;
+    margin-left: 2%;
+    font-size: 13px;
+}
+#navbar>div:nth-child(2) a.active {
+    border-bottom: 2px solid white;
+}
+#navbar>div:nth-child(2)>a:hover{
+    color: white;
+}
+#con{
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+}
+#con>h1{
+    border-bottom: 2px solid black;
+    width: fit-content;
+}
+#fixed{
+    width: 200px;
+    height: 100px;
+    margin-top: 2%;
+}
+#con>div{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#con>div>input{
+    padding: 2%;
+    margin-top: 2%;
+}
+#con>div>label{
+    align-self: center;
+}
+#con>button{
+    padding: 1%;
+    border-radius: 15px;
+    font-size: 15px;
+    border: none;
+    background-color: #71BDD5;
+}
+#display{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 25px;
+}
+#display>h1{
+    display: block;
+}
+.small{
+    text-align: center;
+}
+.small>a{
+    display: block;
+    padding: 0.5%;
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-width:700px){
+    .small{
+        display: none;
+    }
+}
+@media screen and (min-width:0px) and (max-width:700px){
+    .menu{
+        display: none;
+    }
+    body>#navbar>div{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+    }
+    #con{
+        width: 100%;
+    }
+    #con>div{
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #con>div>input{
+        padding: 2%;
+        margin-top: 2%;
+    }
+    #con>div>label{
+        align-self: center;
+    }
+    #con>button{
+        padding: 1%;
+        border-radius: 15px;
+        font-size: 15px;
+        border: none;
+        background-color: #71BDD5;
+    }
+    #display{
+        text-align: center;
+        margin-top: 5%;
+        font-size: 25px;
+    }
+    #display>h1{
+        display: block;
+    }
+    .contact>div>div>h3:nth-child(4){
+        width: 10%;
+        font-size: 15px;
+    }
+}
