@@ -166,7 +166,7 @@
             alert ("Please Fill The All The Information")
         }
         else{
-            alert("Your Information is Saved, We Will Send you email if you are elible for course");
+            alert("Your Information is Saved, We Will Send you email if you are eligible for course");
             let obj={
                 name:name,
                 email:email,
@@ -187,6 +187,16 @@
             LSdata.push(obj);
             localStorage.setItem("details",JSON.stringify(LSdata))
             location.reload();
+        }
+    })
+    let email=document.getElementById("email")
+    document.getElementById("email_btn").addEventListener("click",function(){
+        if(email.value==""){
+            alert("Please fill the Information")
+        }
+        else{
+            alert("Your Data is saved, We will let you know the new Updates. Thanks.")
+            location.reload()
         }
     })
 </script>
