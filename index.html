@@ -246,3 +246,15 @@
     </div>
 </body>
 </html>
+<script>
+    let email=document.getElementById("email")
+    document.getElementById("email_btn").addEventListener("click",function(){
+        if(email.value==""){
+            alert("Please fill the Information")
+        }
+        else{
+            alert("Your Data is saved, We will let you know the new Updates. Thanks.")
+            location.reload()
+        }
+    })
+</script>
