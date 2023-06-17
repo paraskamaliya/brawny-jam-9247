@@ -266,12 +266,12 @@ tbody>tr{
 }
 
 
-@media screen and (min-width:1000px){
+@media screen and (min-width:700px){
     .small{
         display: none;
     }
 }
-@media screen and (min-width:400px) and (max-width:1000px){
+@media screen and (min-width:0px) and (max-width:700px){
     .menu{
         display: none;
     }
@@ -294,8 +294,102 @@ tbody>tr{
     #admission>#admiss{
         width: 90%;
         margin: auto;
+        margin-bottom: 5%;
         display: grid;
         gap: 5%;
         grid-template-columns: repeat(2,1fr);
+    }
+    #image{
+        width: 100%;
+        background-color: #8cd3e8;
+        padding-bottom: 2%;
+    }
+    #image>h1{
+        border-bottom: 3px solid black;
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 2%;
+        padding-top: 2%;
+    }
+    #image>div{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: auto;
+        
+    }
+    #image>div>img{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 5%;
+        transition: transform 0.3s ease;
+        border-radius: 15px;
+    }
+    #image>div>img:hover{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        transform: scale(1.1);
+    }
+    #course{
+        width: 100%;
+        background-color: #E9F2F6;
+        padding-bottom: 2%;
+        margin-top: auto;
+    }
+    #course>h1{
+        border-bottom: 3px solid black;
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 2%;
+        padding-top: 2%;
+    }
+    #course>div{
+        width: 100%;
+        display: grid;
+        margin: auto;
+        text-align: center;
+    }
+    #course>div>div{
+        width: 80%;
+        margin-bottom: 5%;
+        transition: transform 0.3s ease;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+    }
+    #course>div>div>p{
+        padding-left:2%;
+        padding-right: 2%;
+    }
+    #course>div>div:hover{
+        transform: scale(1.1);
+        border: 1px solid black;
+    }
+    #eligible{
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #eligible>h2{
+        border-bottom: 2px solid black;
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 2%;
+    }
+    #eligible>table{
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin: auto;
+        font-size: 19px;
+    }
+    thead>tr{
+        background-color: #5dc5e5;
+    }
+    tbody>tr{
+        background-color: #c4dfe7;
+    }
+    .contact>div>div>h3:nth-child(4){
+        width: 10%;
+        font-size: 15px;
     }
 }

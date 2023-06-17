@@ -147,12 +147,12 @@ form>input{
 
 
 
-@media screen and (min-width:1000px){
+@media screen and (min-width:700px){
     .small{
         display: none;
     }
 }
-@media screen and (min-width:400px) and (max-width:1000px){
+@media screen and (min-width:0px) and (max-width:700px){
     .menu{
         display: none;
     }
@@ -171,5 +171,36 @@ form>input{
         margin: auto;
         text-align: center;
         display: block;
+    }
+    .contact>div>div>h3:nth-child(4){
+        width: 10%;
+        font-size: 15px;
+    }
+    #form{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 3%;
+    }
+    #form>form{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 1%;
+    }
+    form>input{
+        padding: 1%;
+    }
+    #form>h3{
+        margin-top: 20%;
+        border-bottom: 1px solid black;
+        width: fit-content;
+    }
+    #form>button{
+        margin-top: 2%;
+        background-color: #71BDD5;
+        padding: 2%;
+        font-size: 17px;
+        border-radius: 15px;
+        border: none;
+        width: fit-content
     }
 }
