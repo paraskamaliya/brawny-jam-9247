@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <a href="./index.html">
+                <img src="https://i.ibb.co/ns0nFX8/TECH.png" alt="">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="./index.html">HOME</a>
+            <a href="./admission.html">ADMISSIONS</a>
+            <a href="./teacher.html">TEACHERS</a>
+            <a href="./about.html">ABOUT</a>
+            <a href="./news.html">NEWS</a>
+            <a href="./contact.html" class="active">CONTACT</a>
+        </div>
+    </div>
+    <div class="small">
+        <a href="./index.html">HOME</a>
+        <a href="./admission.html">ADMISSIONS</a>
+        <a href="./teacher.html">TEACHERS</a>
+        <a href="./about.html">ABOUT</a>
+        <a href="./news.html">NEWS</a>
+        <a href="./contact.html">CONTACT</a>
+    </div>
+
+    <div id="con">
+        <h1>Contact US</h1>
+        <div>
+            <label for="">Enter Your Name</label><input type="text" required id="name">
+            <label for="">Enter Your Email ID</label><input type="email" name="" id="email" required>
+            <label for="">Enter Your Query/Question</label><textarea name="" id="fixed" required></textarea>
+        </div>
+        <button id="btn">Submit</button>
+    </div>
+    <div id="display"></div>
+</body>
+</html>
+<script>
+    let display=document.getElementById("display")
+    let btn=document.getElementById("btn")
+    btn.addEventListener("click",function(){
+        let name=document.getElementById("name")
+        let email=document.getElementById("email")
+        let desc=document.getElementById("fixed")
+        if (name.value=="" || email.value=="" || desc.value==""){
+            alert("Please Fill The Information")
+        }
+        else{
+            let head=document.createElement("h1").innerText="Your Information is Saved, We will Contact You with answer/Solution. Thank You."
+            let br=document.createElement("br")
+            display.append(head,br)
+            name.value="";
+            email.value="";
+            desc.value="";
+        }
+    })
+</script>
