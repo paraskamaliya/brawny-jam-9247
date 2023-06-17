@@ -145,12 +145,12 @@ div>div>h1{
     color: black;
 }
 
-@media screen and (min-width:1000px){
+@media screen and (min-width:700px){
     .small{
         display: none;
     }
 }
-@media screen and (min-width:400px) and (max-width:1000px){
+@media screen and (min-width:0px) and (max-width:700px){
     .menu{
         display: none;
     }
@@ -169,5 +169,37 @@ div>div>h1{
         margin: auto;
         text-align: center;
         display: block;
+    }
+    #news{
+        background-color: #CCCCCC;
+        margin-top: auto;
+        padding-top: 0%;
+        padding-top: 1%;
+        padding-bottom: 2%;
+    }
+    #news>div>div{
+        margin: auto;
+        width: 80%;
+        display: grid;
+        margin-top: 1%;
+        margin-bottom: 5%;
+        padding: 2%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 15px;
+    }
+    #news>div>div>div:nth-child(1){
+        width: 100%;
+    }
+    #news>div>div>div:nth-child(2){
+        width: 100%;
+        text-align: center;
+    }
+    #news>div>div>div>img{
+        width: 100%;
+        border-radius: 15px;
+    }
+    .contact>div>div>h3:nth-child(4){
+        width: 10%;
+        font-size: 15px;
     }
 }

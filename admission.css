@@ -13,21 +13,6 @@ body{
     width: 20%;
     margin: auto;
     justify-content: center;
-}body{
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-}
-#navbar{
-    width: 100%;
-    display: flex;
-    padding-top: 2%;
-    background-color: #71BDD5;
-}
-#navbar>div:nth-child(1){
-    width: 20%;
-    margin: auto;
-    justify-content: center;
 }
 #navbar>div:nth-child(2){
     width: 30%;
@@ -347,12 +332,12 @@ div>div>h1{
 }
 
 
-@media screen and (min-width:1000px){
+@media screen and (min-width:700px){
     .small{
         display: none;
     }
 }
-@media screen and (min-width:400px) and (max-width:1000px){
+@media screen and (min-width:0px) and (max-width:700px){
     .menu{
         display: none;
     }
@@ -367,36 +352,24 @@ div>div>h1{
     }
     #admission1{
         background-color: #71BDD5;
-        display: flex;
+        display: grid;
         justify-content: center;
-        padding-top: 2%;
-        gap: 5%;
+        height: auto;
     }
     #admission1>div:nth-child(1){
-        width: 25%;
-        padding-top: 2%;
+        width: 80%;
+        margin: auto;
     }
     #admission1>div:nth-child(2){
-        width: 35%;
+        width: 80%;
+        margin: auto;
     }
     #admission1>div:nth-child(1)>h1{
         color: white;
-        margin-bottom: auto;
-    }
-    #admission1>div:nth-child(1)>p{
-        margin-top: 2%;
-        font-size: 15px;
     }
     #admission1>div:nth-child(2)>img{
         width: 100%;
         border-radius: 15px;
-    }
-    body>#register{
-        width: 100%;
-        margin: auto;
-        gap: 10px;
-        text-align: center;
-        justify-content: center;
     }
     body>#list{
         width: 100%;
@@ -417,388 +390,180 @@ div>div>h1{
         text-align: center;
         display: block;
     }
-}
-#navbar>div:nth-child(2){
-    width: 30%;
-    margin: auto;
-    align-items: center;
-}
-#navbar>div>a>img{
-    width: 30%;
-    border-radius: 50%;
-}
-#navbar>div:nth-child(2)>a{
-    text-decoration: none;
-    color: black;
-    margin-left: 2%;
-    font-size: 13px;
-}
-#navbar>div:nth-child(2) a.active {
-    border-bottom: 2px solid white;
-}
-#navbar>div:nth-child(2)>a:hover{
-    color: white;
-}
-#admission1{
-    background-color: #71BDD5;
-    display: flex;
-    justify-content: center;
-    padding-top: 2%;
-    gap: 5%;
-    height: 200px;
-}
-#admission1>div:nth-child(1){
-    width: 25%;
-    padding-top: 2%;
-}
-#admission1>div:nth-child(2){
-    width: 35%;
-}
-#admission1>div:nth-child(1)>h1{
-    color: white;
-    margin-bottom: auto;
-}
-#admission1>div:nth-child(1)>p{
-    margin-top: 2%;
-    font-size: 15px;
-}
-#admission1>div:nth-child(2)>img{
-    width: 100%;
-    border-radius: 15px;
-}
-.small{
-    text-align: center;
-}
-.small>a{
-    display: block;
-    padding: 0.5%;
-    text-decoration: none;
-    color: black;
-}
-#admission2{
-    margin-top: 12%;
-    background-color: #E9F2F6;
-    padding-top:2px;
-}
-#admission2>div:nth-child(1){
-    width: 40%;
-    margin: auto;
-    text-align: center;
-    padding-bottom: 3%;
-}
-#cards{
-    display: flex;
-    width: 60%;
-    margin: auto;
-    text-align: center;
-    gap: 20px;
-    padding-bottom:2%;
-}
-#cards>div{
-    background-color: #71BDD5;
-    border-radius: 15px;
-    padding: 1%;
-}
-#cards>div>div{
-    display: flex;
-    justify-content: space-around;
-}
-div>.line{
-    width: 80%;
-    margin: auto;
-    color: black;
-    border: none;
-    border-top: 1px solid black
-}
-#cards h2{
-    font-weight: 500;
-    font-size: 25px;
-    margin-top: 10px;
-}
-#cards p{
-    font-size: 13px;
-    margin-bottom: auto;
-}
-#cards>div>div:nth-child(1){
-    margin-top: 5px;
-}
-body>#images{
-    width: 100%;
-    margin-top: 7%;
-    margin-bottom: 7%;
-}
-#images>div{
-    display: flex;
-    gap: 1.2%;
-    margin: auto;
-    width: 100%;
-    margin-bottom: 20px;
-}
-#images>div>img{
-    gap: 10px;
-    width: 19%;
-    border-radius: 15px;
-}
-#register{
-    width: 65%;
-    margin: auto;
-    display: flex;
-    gap: 10px;
-    text-align: center;
-    margin-bottom: 5%;
-}
-#register>div{
-    width: 50%;
-}
-#register>div>img{
-    width: 100%;
-    border-radius: 15px;
-}
-#register>div>p{
-    font-size: 16px;
-}
-#register>div>h1{
-    margin-top: auto;
-}
-#register>div>a>button{
-    padding: 2%;
-    border-radius: 15px;
-    border: none;
-    background-color: #71BDD5;
-    font-weight: 600;
-}
-#cardset{
-    width: 65%;
-    margin: auto;
-    display: flex;
-    gap: 15px;
-}
-#cardset>div{
-    padding: 2%;
-    border: 1px solid #71BDD5;
-    border-radius: 15px;
-}
-#cardset>div>div{
-    display: flex;
-}
-#cardset>div>div>div{
-    width: 20%;
-}
-#cardset>div>div>div:nth-child(2){
-    width: 80%;
-    align-items: center;
-}
-#cardset>div>div>div>img{
-    width: 70%;
-    border: 1px solid #71BDD5;
-    border-radius: 15px;
-}
-#cardset>div>div>div>h1{
-    width: 100%;
-    font-size: 25px;
-}
-#cardset>div>p{
-    font-size: 15px;
-}
-#list{
-    width: 65%;
-    margin: auto;
-    display: flex;
-    gap: 10px;
-    text-align: center;
-    margin-bottom: 5%;
-    margin-top: 5%;
-}
-#list>div:nth-child(1){
-    width: 55%;
-}
-#list>div:nth-child(2){
-    width: 45%;
-    padding: 2%;
-    margin-top: auto;
-}
-#list>div>img{
-    width: 100%;
-    border-radius: 15px;
-}
-#list>div>p{
-    font-size: 15px;
-}
-#list>div>h1{
-    margin-top: auto;
-}
-#list>div>button{
-    padding: 3%;
-    border-radius: 15px;
-    border: none;
-    background-color: #71BDD5;
-    font-weight: 600;
-}
-#comm{
-    text-align: center;
-    margin: auto;
-    background-color: #CCCCCC;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    margin-bottom: 5%;
-}
-#comm>img{
-    width: 10%;
-}
-#comm>h1{
-    color: white;
-    font-size: 40px;
-    font-weight: 500;
-    border-bottom: 5px solid white;
-    width: fit-content;
-    margin: auto;
-    margin-top: 1%;
-}
-#comm>a>button{
-    margin-top: 2%;
-    padding: 1%;
-    border-radius: 15px;
-    border: none;
-    font-weight: 600;
-    font-size: 15px;
-}
-.contact{
-    background-color: #71BDD5;
-    width: 100%;
-}
-.contact>div{
-    width: 60%;
-    margin: auto;
-    display: flex;
-    gap: 10%;
-}
-.contact>div>div:nth-child(1){
-    width: 25%;
-}
-.contact>div>div:nth-child(2){
-    width: 25%;
-}
-.contact>div>div:nth-child(3){
-    width: 25%;
-}
-.contact>div>div:nth-child(4){
-    width: 25%;
-}
-.contact>div>div{
-    gap: 20px;
-}
-.contact>div>div>img{
-    width: 30%;
-    border-radius: 50%;
-}
-.contact>div>div>a{
-    text-decoration: none;
-    color: black;
-}
-.contact>div>div:nth-child(4)>div:nth-child(3)>img{
-    width: 50%;
-}
-.contact>div>div:nth-child(4)>div:nth-child(4)>img{
-    width: 20%;
-}
-.contact>div>div:nth-child(1){
-    padding-top: 3%;
-}
-.contact>div>div>h1{
-    font-weight: 500;
-}
-.contact>div>div>h2{
-    font-weight: 500;
-    font-size: 20px;
-}
-.contact>div>div>h3{
-    font-weight: 500;
-}
-#option1{
-    padding-top: 6%;
-}
-#option1>a{
-    padding-top: 6%;
-    display: block;
-}
-#option2{
-    padding-top: 6%;
-}
-#option2>a{
-    padding-top: 6%;
-    display: block;
-}
-div>div>h1{
-    font-weight: 500;
-}
-.contact>div>div:nth-child(4)>div:nth-child(2){
-    width: fit-content;
-}
-
-
-@media screen and (min-width:1000px){
-    .small{
-        display: none;
+    #admission2{
+        margin-top: 12%;
+        background-color: #E9F2F6;
+        padding-top:2px;
     }
-}
-@media screen and (min-width:400px) and (max-width:1000px){
-    .menu{
-        display: none;
-    }
-    body>#navbar>div{
-        width: 100%;
+    #admission2>div:nth-child(1){
+        width: 70%;
         margin: auto;
         text-align: center;
-        justify-content: center;
+        padding-bottom: 3%;
     }
-    #admission1{
+    #cards{
+        display: grid;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        gap: 20px;
+        padding-bottom:2%;
+    }
+    #cards>div{
         background-color: #71BDD5;
+        border-radius: 15px;
+        padding: 1%;
+    }
+    #cards>div>div{
         display: flex;
-        justify-content: center;
-        padding-top: 2%;
-        gap: 5%;
+        justify-content: space-around;
     }
-    #admission1>div:nth-child(1){
-        width: 25%;
-        padding-top: 2%;
+    div>.line{
+        width: 80%;
+        margin: auto;
+        color: black;
+        border: none;
+        border-top: 1px solid black
     }
-    #admission1>div:nth-child(2){
-        width: 35%;
+    #cards h2{
+        font-weight: 500;
+        font-size: 25px;
+        margin-top: 10px;
     }
-    #admission1>div:nth-child(1)>h1{
-        color: white;
+    #cards p{
+        font-size: 13px;
         margin-bottom: auto;
     }
-    #admission1>div:nth-child(1)>p{
-        margin-top: 2%;
-        font-size: 15px;
+    #cards>div>div:nth-child(1){
+        margin-top: 5px;
     }
-    #admission1>div:nth-child(2)>img{
+    #register{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        gap: 10px;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    #register>div{
+        width: 100%;
+    }
+    #register>div>img{
         width: 100%;
         border-radius: 15px;
     }
-    body>#register{
-        width: 100%;
+    #register>div>p{
+        font-size: 16px;
+    }
+    #register>div>h1{
+        margin-top: auto;
+    }
+    #register>div>a>button{
+        padding: 2%;
+        border-radius: 15px;
+        border: none;
+        background-color: #71BDD5;
+        font-weight: 600;
+    }
+    #cardset{
+        width: 65%;
         margin: auto;
+        display: grid;
+        gap: 15px;
+    }
+    #cardset>div{
+        padding: 2%;
+        border: 1px solid #71BDD5;
+        border-radius: 15px;
+    }
+    #cardset>div>div{
+        display: flex;
+    }
+    #cardset>div>div>div{
+        width: 20%;
+    }
+    #cardset>div>div>div:nth-child(2){
+        width: 80%;
+        align-items: center;
+    }
+    #cardset>div>div>div>img{
+        width: 70%;
+        border: 1px solid #71BDD5;
+        border-radius: 15px;
+    }
+    #cardset>div>div>div>h1{
+        width: 100%;
+        font-size: 25px;
+    }
+    #cardset>div>p{
+        font-size: 15px;
+    }
+    #list{
+        width: 70%;
+        margin: auto;
+        display: grid;
         gap: 10px;
         text-align: center;
-        justify-content: center;
+        margin-bottom: 5%;
+        margin-top: 5%;
     }
-    body>#list{
+    #list>div:nth-child(1){
+        width: 80%;
+        margin: auto;
+    }
+    #list>div:nth-child(2){
+        width: 80%;
+        padding: 2%;
+        margin: auto;
+        margin-top: auto;
+    }
+    #list>div>img{
         width: 100%;
-        margin: auto;
-        gap: 10px;
-        text-align: center;
-        justify-content: center;
+        border-radius: 15px;
     }
-    .contact>div{
-        margin: auto;
-        display: block;
-        text-align: center;
+    #list>div>p{
+        font-size: 15px;
     }
-    .contact>div>div{
-        margin: auto;
+    #list>div>h1{
+        margin-top: auto;
+    }
+    #list>div>button{
+        padding: 3%;
+        border-radius: 15px;
+        border: none;
+        background-color: #71BDD5;
+        font-weight: 600;
+    }
+    #comm{
         text-align: center;
-        display: block;
+        margin: auto;
+        background-color: #CCCCCC;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        margin-bottom: 5%;
+    }
+    #comm>img{
+        width: 10%;
+    }
+    #comm>h1{
+        color: white;
+        font-size: 40px;
+        font-weight: 500;
+        border-bottom: 5px solid white;
+        width: fit-content;
+        margin: auto;
+        margin-top: 1%;
+    }
+    #comm>a>button{
+        margin-top: 2%;
+        padding: 1%;
+        border-radius: 15px;
+        border: none;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .contact>div>div>h3:nth-child(4){
+        width: 10%;
+        font-size: 15px;
     }
 }
