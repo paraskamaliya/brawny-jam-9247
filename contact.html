@@ -47,6 +47,7 @@
 <script>
     let display=document.getElementById("display")
     let btn=document.getElementById("btn")
+    let data=JSON.parse(localStorage.getItem("question")) || [];
     btn.addEventListener("click",function(){
         let name=document.getElementById("name")
         let email=document.getElementById("email")
@@ -57,20 +58,17 @@
         else{
             let head=document.createElement("h1").innerText="Your Information is Saved, We will Contact You with answer/Solution. Thank You."
             let br=document.createElement("br")
+            let obj={
+                name:name.value,
+                email:email.value,
+                query:desc.value
+            }
+            data.push(obj)
+            localStorage.setItem("question",JSON.stringify(data))
             display.append(head,br)
             name.value="";
             email.value="";
             desc.value="";
-        }
-    })
-    let email=document.getElementById("email")
-    document.getElementById("email_btn").addEventListener("click",function(){
-        if(email.value==""){
-            alert("Please fill the Information")
-        }
-        else{
-            alert("Your Data is saved, We will let you know the new Updates. Thanks.")
-            location.reload()
         }
     })
 </script>
